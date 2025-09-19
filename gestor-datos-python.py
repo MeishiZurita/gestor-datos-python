@@ -23,6 +23,7 @@ def agregar_registro():
         }
         registros.append(registro)
         print("Registro agregado")
+        print("Función agregar ejecutada correctamente")
     except ValueError:
         print("Error: Edad no valida")
 
