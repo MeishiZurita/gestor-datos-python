@@ -13,7 +13,7 @@ Puedes verificar que Python está instalado ejecutando:
 
 ```bash
 python --version
-
+```
 
 ### 2. Abrir la terminal
 
