@@ -7,7 +7,7 @@ Cuenta con funciones para *agregar, listar, buscar y eliminar registros* mediant
 
 ### 1. Requisitos
 - Tener *Python 3* instalado en tu computadora.  
-- Tener el archivo gestor.py en la carpeta del proyecto.  
+- Tener el archivo gestor-datos-python.py en la carpeta del proyecto.  
 
 Puedes verificar que Python está instalado ejecutando:
 
