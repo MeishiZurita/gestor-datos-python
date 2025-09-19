@@ -43,21 +43,25 @@ def listar_registros():
 
 def buscar_registro_por_nombre():
     try:
-        nombre = input("Ingresa el nombre que quieres buscar: ")
+        print("Ejecutando búsqueda por nombre")
+        nombre = input("Ingrese el nombre que desea buscar: ")
         resultados = [registro for registro in registros if registro["nombre"].lower() == nombre.lower()]
         if not resultados:
-            raise ValueError("No se encontraron registros")
+            raise ValueError("No se encontro ningún registro")
         for registro in resultados:
             print(f"Nombre: {registro['nombre']}")
             print(f"Edad: {registro['edad']}")
             print(f"Fecha: {registro['fecha']}")
             print(f"Matrícula: {registro['matricula']}")
+            
+            print("Función buscar registro por nombre ejecutada correctamente")
             print("------------------------")
     except ValueError as e:
         print(f"Error: {e}")
 
 def buscar_registro_por_matricula():
     try:
+        print("Ejecutando búsqueda por matrícula")
         matricula = input("Ingresa la matrícula a buscar: ")
         resultados = [registro for registro in registros if registro["matricula"].lower() == matricula.lower()]
         if not resultados:
@@ -67,6 +71,8 @@ def buscar_registro_por_matricula():
             print(f"Edad: {registro['edad']}")
             print(f"Fecha: {registro['fecha']}")
             print(f"Matrícula: {registro['matricula']}")
+            
+            print("Función buscar registro por matrícula ejecutada correctamente")
             print("------------------------")
     except ValueError as e:
         print(f"Error: {e}")
