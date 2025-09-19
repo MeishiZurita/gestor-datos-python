@@ -83,7 +83,9 @@ def eliminar_registro_por_matricula():
         for registro in registros:
             if registro["matricula"].lower() == matricula.lower():
                 registros.remove(registro)
+                print("Ejecutando función eliminar por matrícula...")
                 print("Registro eliminado con éxito")
+                print("Función eliminar por matrícula finalizada")
                 return
         raise ValueError("No se encontró el registro")
     except ValueError as e:
@@ -95,7 +97,9 @@ def eliminar_registro_por_indice():
         if indice < 0 or indice >= len(registros):
             raise ValueError("Índice inválido")
         del registros[indice]
+        print("Ejecutando función eliminar por índice...")
         print("Registro eliminado con éxito")
+        print("Función eliminar por índice finalizada")
     except ValueError as e:
         print(f"Error: {e}")
 
